@@ -36,16 +36,6 @@ class Graph1 extends \booosta\ui\UI
     $this->options = [];
   }
 
-  public function after_instanciation()
-  {
-    parent::after_instanciation();
-
-    #    if(is_object($this->topobj) && is_a($this->topobj, '\booosta\webapp\Webapp')):
-    #      $this->topobj->moduleinfo['graph1'] = true;
-    #      if($this->topobj->moduleinfo['jquery']['use'] == '') $this->topobj->moduleinfo['jquery']['use'] = true;
-    #    endif;
-  }
-
   public function set_title($title) { $this->title = $title; }
   public function set_data($data) { $this->data = $data; }
   public function set_height($val) { $this->height = $val; }
@@ -80,13 +70,7 @@ class Graph1 extends \booosta\ui\UI
     else $this->data[] = $data;
   }
 
-  public function get_html_includes($libpath = 'lib/modules/graph1')
-  {
-    return;  // disabled
-    return "<script type='text/javascript' src='{$this->base_dir}{$libpath}/js/jquery.flot.js'></script>
-            <script type='text/javascript' src='{$this->base_dir}{$libpath}/js/jquery.flot.time.js'></script>
-            <link rel='stylesheet' type='text/css' href='{$this->base_dir}{$libpath}/jquery.flot.css' media='screen' />";
-  }
+  public function get_html_includes($libpath = 'lib/modules/graph1') {}
 
   public function get_htmlonly()
   {
