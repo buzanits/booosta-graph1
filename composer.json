@@ -23,8 +23,8 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=8.0.0",
-        "booosta/webapp": "dev-master",
-        "booosta/jquery": "dev-master",
+        "booosta/webapp": "^4.0",
+        "booosta/jquery": "^4.0",
         "npm-asset/flot": "^4.2"
     }
 }
